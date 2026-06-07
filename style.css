@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d1a; /* dark purple tone */
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    flex: 1;
+    display: flex;
+    justify-content: none;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9f43; /* orange glow */
+}
+
+.lang {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #ff9f43;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.lang:hover {
+    background-color: #ff9f43;
+    color: #0d0d1a;
+}
+
+/* Hero Content */
+.content {
+    max-width: 400px;
+    margin-top: 80px;
+}
+
+
+
+.content h1 span {
+    color: #ff9f43;
+    margin-left: 10px;
+}
+
+.content p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #ff9f43;
+    color: #0d0d1a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7f00;
+}
+
+/* Coin List */
+.list {
+    display: flex;              /* enables flexbox */
+    flex-direction: row;        /* horizontal alignment */           /* allows wrapping if screen is small */
+    justify-content: center;    /* centers the coins */
+    gap: 40px;                  /* spacing between coins */
+    margin: 40px 0;
+    list-style: none;
+}
+
+.coin {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.coin img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.coin h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.coin p {
+    font-size: 20px;
+    color: #ff9f43;
+    font-weight: bold;
+}
+
+.coin:hover {
+    transform: translateY(-10px);
+}
